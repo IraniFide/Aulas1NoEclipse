@@ -1,0 +1,107 @@
+
+//    private ContaCorrente contaCorrente;
+
+    //int no lugar do Integer pq int serve para variavel e Integer é um objeto
+//    private int agencia = 100;
+//    private int conta = 34567;
+//    private String cpf = "123.456.788-90";
+//    private String nome = "Jose da Silva";
+//    private String nascimento = "15/06/1995";
+//    private String endereco = "Av dos Autonomista 234";
+//    private String telefone = "(11)9152-456";
+//    private float saldo = 1000.00f;
+//    private String senha = "abc#12345";
+
+//
+//    public void mostrarCliente() {
+//        System.out.println("Agência"  + this.agencia);
+//        System.out.println("Conta"  + this.conta);
+//        System.out.println("CPF"  + this.cpf);
+//        System.out.println("Nome"  + this.nome);
+//        System.out.println("Data Nascimento"  + this.nascimento);
+//        System.out.println("Endereço"  + this.endereco);
+//        System.out.println("Telefone"  + this.telefone);
+//        System.out.println("Saldo R$"  + this.saldo);
+//        System.out.println("Senha"  + this.senha);
+//        System.out.println("Numero da conta");
+
+//        contaCorrente.imprimirContaCorrente();
+
+//    } Este modelo comentado é um jeito de fazer o exercício, la no executar chamo o comando pessoa.mostrarCliente()
+//    e ele executa o que esta comentado
+
+
+//    public Cliente(int agenciacad, int contacad, String cpfcad, String nomecad, String nascimentocad,
+//    String enderecocad, String telefonecad, float saldocad, String senhacad, ContaCorrente contaCorrentecad) {
+//
+//        contaCorrente = contaCorrentecad;
+//        agencia = agenciacad;
+//        conta = contacad;
+//        cpf = cpfcad;
+//        nome = nomecad;
+//        nascimento = nascimentocad;
+//        endereco = enderecocad;
+//        telefone = telefonecad;
+//        saldo = saldocad;
+//        senha = senhacad;
+//
+//
+//    }
+
+/*
+ Programa: Cálculo da derivada de uma função f(x) avaliada no ponto x0 = 0
+arquivo: DerivadaB.java
+*/
+
+class DerivadaB{
+
+                                  // Métodos
+
+double f(double){
+
+        return Math.hypot(x,(1/2));
+        }// fim do método f(x), uma função qualquer, na qual declaramos sua expressão
+
+
+public void derivate_da_funcao(double x0){
+
+/*
+df(x)/dx = (f(x0 + h) - f(x0))/h onde h----->0, tende à zero
+*/
+
+double d;
+double h = 1;
+       while(h>0){
+h -=Math.pow(10,(-3));
+
+          d = ((f(x0 + h) - f(x0))/h);
+System.out.print("\nh = "+h+" || derivada(h) = "+d);
+
+               }// fim do while
+
+       }// Fim do método derivate
+
+}// fim da classe DerivadaB
+
+
+Fórmula de cálculo do pagamento do valor mensal do seguro de vida:
+
+//5% do salário atual;
+this.mensalidade = this.mensalidade *0.5f
+Fumante: acréscimo de 2% sobre o salário.
+Sexo masculino:
+
+Idade entre 18 e 25: sem acréscimo;
+Idade entre 26 e 45: acréscimo de 2% sobre o salário;
+Idade entre 46 e 65: acréscimo de 3% sobre o salário.
+Sexo feminino:
+
+Idade entre 18 e 25: sem acréscimo;
+Idade entre 26 e 45: acréscimo de 1% sobre o salário;
+Idade entre 46 e 65: acréscimo de 2% sobre o salário.
+Valor de cobertura:
+
+Salário até 1.500,00: 150.000,00;
+Salário maior 1.500,00 e até 3.000,00: 250.000,00.
+Salário maior 3.000,00 e até 5.000,00: 350.000,00;
+Salário maior 5.000,00: 500.000,00.
